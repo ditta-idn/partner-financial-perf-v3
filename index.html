@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner Channel Financial Performance Dashboard — Rev 2</title>
+    <!-- Tailwind via CDN (no build step needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <div id="root"></div>
+
+    <!-- React + ReactDOM from ESM CDN -->
+    <script type="module">
+      import React from "https://esm.sh/react@18.2.0";
+      import { createRoot } from "https://esm.sh/react-dom@18.2.0/client";
+      import Dashboard from "./dashboard.js";
+
+      const root = createRoot(document.getElementById("root"));
+      root.render(React.createElement(Dashboard));
+    </script>
+  </body>
+</html>
